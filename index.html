@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SteppingTech</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="steppingtech2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <style>
+        /* Particle Background Styles */
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            background: linear-gradient(135deg, #4CAF50, #007BFF);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" data-aos="fade-down" style="background: linear-gradient(135deg, #1e1e1e, #333); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+        <div class="logo-container">
+            <img src="D:\Steppingtech\Download\Final Logo/STEPPINGTECH.JPEG" alt="SteppingTech Logo" style="height: 50px;">
+            <h1>SteppingTech</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" data-aos="zoom-in">
+        <div id="particles-js"></div>
+        <div class="hero-content">
+            <h1 data-aos="fade-up" data-aos-delay="200">Innovate. Create. Inspire.</h1>
+            <p data-aos="fade-up" data-aos-delay="400">Empowering technology solutions for a better tomorrow.</p>
+            <div class="hero-buttons" data-aos="fade-up" data-aos-delay="600">
+                <a href="#services" class="btn-primary">Our Services</a>
+                <a href="#portfolio" class="btn-secondary">View Portfolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about" data-aos="fade-right">
+        <div class="container">
+            <h2 data-aos="fade-in">About Us</h2>
+            <div class="content">
+                <img src="data:image/png;base64,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" alt="Team">
+                <p data-aos="fade-left" data-aos-delay="400">
+                    We are a team of innovators passionate about technology, committed to delivering high-quality solutions and driving progress.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services" data-aos="fade-up">
+        <div class="container">
+            <h2 data-aos="zoom-in">Our Services</h2>
+            <div class="service-grid">
+                <div class="service" data-aos="zoom-in" data-aos-delay="200">
+                    <h3>Web Development</h3>
+                    <p>We create responsive and engaging websites tailored to your needs.</p>
+                </div>
+                <div class="service" data-aos="zoom-in" data-aos-delay="400">
+                    <h3>App Development</h3>
+                    <p>Custom mobile applications to drive your business forward.</p>
+                </div>
+                <div class="service" data-aos="zoom-in" data-aos-delay="600">
+                    <h3>Digital Marketing</h3>
+                    <p>Innovative strategies to boost your online presence and engagement.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio" data-aos="fade-up">
+        <div class="container">
+            <h2 data-aos="zoom-in">Our Portfolio</h2>
+            <div class="portfolio-grid">
+                <div class="card" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://img.freepik.com/free-vector/creative-process-landing-page_23-2148159975.jpg?t=st=1737224958~exp=1737228558~hmac=45639f0f787afdde88209bd7444c15198088e8999c3e8606da2a4057513c1d0c&w=1060" alt="Project 1">
+                    <div class="card-content">
+                        <h3>Project 1</h3>
+                        <p>Short description of the project.</p>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-delay="400">
+                    <img src="https://img.freepik.com/free-vector/creative-process-landing-page_23-2148159975.jpg?t=st=1737224958~exp=1737228558~hmac=45639f0f787afdde88209bd7444c15198088e8999c3e8606da2a4057513c1d0c&w=1060" alt="Project 1">
+                    <div class="card-content">
+                        <h3>Project 2</h3>
+                        <p>Short description of the project.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact" data-aos="fade-up">
+        <div class="container">
+            <h2 data-aos="zoom-in">Contact Us</h2>
+            <p data-aos="fade-in" data-aos-delay="200">Have questions or want to work together? Reach out to us!</p>
+            <form action="#" method="POST" data-aos="fade-up" data-aos-delay="400">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" data-aos="fade-up">
+        <p>&copy; 2025 SteppingTech. All rights reserved.</p>
+        <div class="social-links" data-aos="fade-up" data-aos-delay="200">
+            <a href="#">LinkedIn</a>
+            <a href="#">Twitter</a>
+            <a href="#">Facebook</a>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top" title="Scroll to top">&#8679;</button>
+
+    <!-- Particle.js Script -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS.load('particles-js', {
+            "particles": {
+                "number": {
+                    "value": 80,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#ffffff"
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": false
+                },
+                "size": {
+                    "value": 3,
+                    "random": true
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#ffffff",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 6,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false
+                }
+            }
+        });
+    </script>
+
+    <!-- AOS Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200, /* Animation duration */
+            once: true     /* Animation runs only once */
+        });
+
+        const scrollToTop = document.getElementById('scrollToTop');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                scrollToTop.style.display = 'flex';
+            } else {
+                scrollToTop.style.display = 'none';
+            }
+        });
+        scrollToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+
+</html>
